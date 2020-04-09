@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式布局</title>
+    <link rel="icon" href="./src/骷髅.png">
+    <link rel="stylesheet" href="./dist/index.css">
+</head>
+
+<body>
+
+    <!-- 容器 -->
+    <main>
+        <!-- 内容区域 -->
+        <section layout="column">
+            <!-- A -->
+            <div layout="rows-justify">
+                <div self="size-1of3 md-half sm-full">A1</div>
+                <div self="size-1of3 md-half sm-full">A2</div>
+            </div>
+            <!-- B -->
+            <div layout="lg-column" self="size-x1">
+                <div self="size-x1">B1</div>
+                <div self="size-x3 sm-first">
+                    B2 (first on small screen)
+                </div>
+                <div self="size-x1">B3</div>
+            </div>
+            <!-- C -->
+            <div layout="rows-justify">
+                <div self="sm-full">C1</div>
+                <div self="right sm-full">C2</div>
+                <div self="sm-full">C3</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
